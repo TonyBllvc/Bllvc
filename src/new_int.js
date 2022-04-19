@@ -15,34 +15,27 @@ function sum(){
 };
 
 function addTo(){   
-// console.log("sell");
+ 
     var one = document.getElementById("main").value;
     var first = document.getElementById("main_one");
     var second = document.getElementById("main_two");
     var third = document.getElementById("main_three");
-
-    if(one != null){
-        // console.log(7);
+    if(!first.value){
         first.value = one;
-        document.getElementById("main").value = null;
-    };
-    one == null;
-    if(one && first.value != null ){
-        // console.log(2);
+        document.getElementById("main").value = "";
+    }else if(first.value && (!second.value)){
         second.value = one;
-        document.getElementById("main").value = null;
-    };
-    // if(first.value && second.value && (third.value != null)){  
-    //     // console.log(3);
-    //     third.value = one;
-    //     document.getElementById("main").value = "";   
-    // };
+        document.getElementById("main").value = "";
+    }else if(first.value && second.value && (!third.value)){
+        third.value = one;
+        document.getElementById("main").value = "";   
+    }
 
     // console.log(4);
 
     // if(one = first){
     // }
-};
+}
 
 // function addTo(){
 //     var one = document.getElementById("main").value;
