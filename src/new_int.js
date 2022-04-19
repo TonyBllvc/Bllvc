@@ -20,6 +20,7 @@ function addTo(){
     var first = document.getElementById("main_one");
     var second = document.getElementById("main_two");
     var third = document.getElementById("main_three");
+    
     if(!first.value){
         first.value = one;
         document.getElementById("main").value = "";
