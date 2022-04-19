@@ -1,0 +1,944 @@
+@charset "utf-8";
+*{
+    width: vw;
+    margin: 0;
+}
+
+/* Background styling */
+
+.body{
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    /*Text styles */
+    color: #202020;
+    /* background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/19.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form{
+    background-color: white;
+    position: relative;
+    padding: 110px 20px 160px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    top: 120px;
+    margin: 0 40px 0 40px;
+
+}
+
+/* flex box ssettigs */
+.type{
+    width: 30%;
+    position: relative;
+    left: 40px;
+}
+.type-1{
+    width: 40%;
+    position: relative;
+    right: 150px;
+}
+
+.type-2{
+    width: 30%;
+}
+
+
+    /* Form styling for the input enter area*/
+    .vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    
+.span-1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+    
+    .inpuT {
+        border: none;
+        width: 100px;
+        background-color: lightblue;
+        padding: 14.1px;
+        margin-right: 5px;
+        margin-bottom: 7px;
+        float: left;
+    }
+
+/* Form styling for the input area*/
+
+.style-1{
+    position: relative;
+    left: 22%;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+
+.shape{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: 20px;
+    left: 120px; 
+}
+
+.show{
+    width: 80%;
+    display: inline-block;
+}
+
+.inpT {
+    border: none;
+    width: 75%;
+    background-color: lightblue;
+    padding: 14.1px;
+    margin-right: 10px;
+}
+
+.addto{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    margin-left: -30px;
+}
+/* Form styling for the output area */
+
+.outputs{
+    width: 70%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+.outputs-1{
+    width: 60%;
+    margin: 50px;
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.disp{
+    margin-left: 6px;
+
+}
+
+
+.textings {
+    border: none;
+    width: 229px;
+    background-color: lightgrey;
+    padding: 13.1px;
+    margin-bottom: 10px ;
+    font-size: 20px;
+    margin-right: 40px;  
+}
+
+.btnN{ 
+    margin-left: 45.5px;
+}
+
+.btn{
+    border: none;
+    background-color: #202020;
+    color: wheat;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.happy{
+    border: none;
+    background-color: #202020;
+    color: #fff;
+    width: 150px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#textDisplay{
+    color: white;
+    padding: 20px;
+    display: none;
+}
+/* Form styling for the section area */
+
+.k-body{
+    
+    width: 60%;
+    height: 70%;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    top: 20px;
+    left: 3%; 
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    width: 50%;
+    margin-bottom: 10px;
+    border: none;
+    margin-left: 60px;
+    padding: 10px;
+    background-color: beige;
+}
+
+
+
+/* Responsiveness for tablet of 1024px */
+
+@media (max-width: 1024px ){
+    body{
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+        /*Text styles */
+        color: #202020;
+        /* background styles */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/19.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .form{
+       width: 100vw;
+       background-color: white;
+       position: relative;
+       padding: 10px 50px 10px 20px;
+       align-items: center;
+       top: 120px;
+       margin: 0 5px 0 5px;
+    }
+
+
+    /* flex box ssettigs */
+    .type{
+        width: 30%;
+        position: relative;
+        left: 40px;
+    }
+    .type-1{
+        width: 40%;
+        position: relative;
+        right: 40px;
+    }
+
+    .type-2{
+        width: 30%;
+    }
+
+    /* Form styling for the input enter area*/
+    .vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+    .span-1{
+        font-size: 16px;
+    }
+    
+    .inpuT {
+        border: none;
+        width: 50px;
+        background-color: lightblue;
+        padding: 8.1px;
+        margin-top: 1px;
+        margin-right: 5px;
+        margin-bottom: 7px;
+    }
+    
+    /* Form styling for the input area*/
+    
+    .style-1{
+        position: relative;
+        left: 2px;
+        font-weight: 600;
+        font-size: x-large;
+    }
+    
+    
+    .shape{
+        width: 390px;
+        height: 70%;
+        position: relative;
+        top: 20px;
+        left: 1%; 
+    }
+    
+    
+.inpT {
+    border: none;
+    width: 80%;
+    background-color: lightblue;
+    padding: 14.1px;
+    margin-right: 5px;
+}
+
+    
+    /* Form styling for the output area */
+    
+    .outputs{
+        width: 100%;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .outputs-1{
+        width: 100%;
+        margin-top: 40px;
+        margin-left: -5px;
+    }
+
+
+
+    .disp{
+        margin-left: 2px;
+    }
+
+
+    .textings {
+        border: none;
+        width: 229px;
+        background-color: lightgrey;
+        padding: 13.1px;
+        margin-bottom: 10px ;
+        font-size: 20px;
+        margin-right: 40px;  
+    }
+
+    .btnN{ 
+        margin-left: 10px;
+    }
+
+    .btn{
+        border: none;
+        background-color: #202020;
+        color: wheat;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+
+    /* Form styling for the section area */
+
+    .k-body{
+
+        width: 60%;
+        height: 70%;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        top: 20px;
+        left: 3%; 
+    }
+
+    .align{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list{
+        width: 100px;
+        margin-bottom: 10px;
+        border: none;
+        margin-left: 60px;
+        padding: 8px;
+        background-color: beige;
+    }
+
+
+    }
+
+    /* Responsiveness for mobile of 450px */
+
+@media (max-width: 450px ){
+    body{
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+        /*Text styles */
+        color: #202020;
+        /* background styles */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/19.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+   .form{
+       width: 100vw;
+        background-color: white;
+        position: relative;
+        padding: 10px 50px 10px 20px;
+        align-items: center;
+        top: 120px;
+        margin: 0 5px 0 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    
+    }
+
+
+    /* flex box ssettigs */
+    .type{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .type-1{
+        width: 100%;
+        position: relative;
+        right: 170px;
+        margin-top: -40px;
+    }
+    
+    .type-2{
+        width: 100%;
+        position: relative;
+        right: 570px;
+        margin-top: 190px;
+    }
+
+    /* Form styling for the input enter area*/
+    .vertical{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: -170px;
+        left: 266px;
+    }
+    
+    .span-1{
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .inpuT {
+        border: none;
+        width: 40px;
+        background-color: lightblue;
+        padding: 2px 10px 2px 10px;
+        margin-top: 1px;
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+    
+    /* Form styling for the input area*/
+    
+    .style-1{
+        width: 90%;
+        position: relative;
+        text-align: initial;
+        left: 170px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    
+    .shape{
+        width: 390px;
+        height: 70%;
+        position: relative;
+        top: 10px;
+        left: 170px; 
+    }
+    
+    
+    .inpT {
+        border: none;
+        width: 50%;
+        background-color: lightblue;
+        padding: 10.1px;
+        margin-right: 5px;
+    }
+
+    
+    /* Form styling for the output area */
+    
+    .outputs{
+        width: 50%;
+        margin-left: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .outputs-1{
+        width: 100%;
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+
+
+
+    .disp{
+        margin-left: 2px;
+    }
+
+
+    .textings {
+        border: none;
+        width: 140%;
+        background-color: lightgrey;
+        padding: 7.1px;
+        margin-bottom: 10px ;
+        font-size: 20px;
+        margin-right: 40px;  
+    }
+
+    .btnN{ 
+        margin-left: 10px;
+    }
+
+    .btn{
+        border: none;
+        background-color: #202020;
+        color: wheat;
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+    /* Form styling for the section area */
+
+    .k-body{
+
+        width: 30%;
+        height: 70%;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        top: 20px;
+        left: 160px; 
+    }
+
+    .align{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .list{
+        width: 100%;
+        margin-bottom: 10px;
+        border: none;
+        margin-left: 10%;
+        padding: 7.6px;
+        background-color: beige;
+    }
+
+
+}
+
+
+/* Responsiveness for mobile of 325px */
+
+@media (max-width: 375px ){
+    body{
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+        /*Text styles */
+        color: #202020;
+        /* background styles */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/19.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+   .form{
+       width: 100vw;
+        background-color: white;
+        position: relative;
+        padding: 10px 50px 10px 20px;
+        align-items: center;
+        top: 120px;
+        margin: 0 5px 0 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    
+    }
+
+
+    /* flex box ssettigs */
+    .type{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .type-1{
+        width: 90%;
+        position: relative;
+        right: 170px;
+        margin-top: -40px;
+    }
+    
+    .type-2{
+        width: 50%;
+        position: relative;
+        right: 135%;
+        margin-top: 190px;
+    }
+
+    /* Form styling for the input enter area*/
+    .vertical{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: -170px;
+        left: 176px;
+    }
+    
+    .span-1{
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .inpuT {
+        border: none;
+        width: 40px;
+        background-color: lightblue;
+        padding: 2px 10px 2px 10px;
+        margin-top: 1px;
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+    
+    /* Form styling for the input area*/
+    
+    .style-1{
+        width: 90%;
+        position: relative;
+        text-align: initial;
+        left: 170px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    
+    .shape{
+        width: 390px;
+        height: 70%;
+        position: relative;
+        top: 10px;
+        left: 170px; 
+    }
+    
+    
+    .inpT {
+        border: none;
+        width: 50%;
+        background-color: lightblue;
+        padding: 10.1px;
+        margin-right: 5px;
+    }
+
+    
+    /* Form styling for the output area */
+    
+    .outputs{
+        width: 50%;
+        margin-left: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .outputs-1{
+        width: 100%;
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+
+
+
+    .disp{
+        margin-left: 2px;
+    }
+
+
+    .textings {
+        border: none;
+        width: 140%;
+        background-color: lightgrey;
+        padding: 7.1px;
+        margin-bottom: 10px ;
+        font-size: 20px;
+        margin-right: 40px;  
+    }
+
+    .btnN{ 
+        margin-left: 10px;
+    }
+
+    .btn{
+        border: none;
+        background-color: #202020;
+        color: wheat;
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+    /* Form styling for the section area */
+
+    .k-body{
+
+        width: 30%;
+        height: 70%;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        top: 20px;
+        left: 160px; 
+    }
+
+    .align{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .list{
+        width: 120%;
+        margin-bottom: 10px;
+        border: none;
+        margin-left: 4.5%;
+        padding: 9.6px;
+        padding-right: 14.63px;
+        background-color: beige;
+    }
+
+
+}
+
+
+
+/* Responsiveness for mobile of 325px */
+
+@media (max-width: 325px ){
+    body{
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+        /*Text styles */
+        color: #202020;
+        /* background styles */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/19.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+   .form{
+       width: 100vw;
+        background-color: white;
+        position: relative;
+        padding: 10px 50px 10px 20px;
+        align-items: center;
+        top: 120px;
+        margin: 0 5px 0 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    
+    }
+
+
+    /* flex box ssettigs */
+    .type{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .type-1{
+        width: 90%;
+        position: relative;
+        right: 170px;
+        margin-top: -40px;
+    }
+    
+    .type-2{
+        width: 50%;
+        position: relative;
+        right: 470px;
+        margin-top: 190px;
+    }
+
+    /* Form styling for the input enter area*/
+    .vertical{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: -170px;
+        left: 176px;
+    }
+    
+    .span-1{
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .inpuT {
+        border: none;
+        width: 40px;
+        background-color: lightblue;
+        padding: 2px 10px 2px 10px;
+        margin-top: 1px;
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+    
+    /* Form styling for the input area*/
+    
+    .style-1{
+        width: 90%;
+        position: relative;
+        text-align: initial;
+        left: 170px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    
+    .shape{
+        width: 390px;
+        height: 70%;
+        position: relative;
+        top: 10px;
+        left: 170px; 
+    }
+    
+    
+    .inpT {
+        border: none;
+        width: 50%;
+        background-color: lightblue;
+        padding: 10.1px;
+        margin-right: 5px;
+    }
+
+    
+    /* Form styling for the output area */
+    
+    .outputs{
+        width: 50%;
+        margin-left: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .outputs-1{
+        width: 100%;
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+
+
+
+    .disp{
+        margin-left: 2px;
+    }
+
+
+    .textings {
+        border: none;
+        width: 140%;
+        background-color: lightgrey;
+        padding: 7.1px;
+        margin-bottom: 10px ;
+        font-size: 20px;
+        margin-right: 40px;  
+    }
+
+    .btnN{ 
+        margin-left: 10px;
+    }
+
+    .btn{
+        border: none;
+        background-color: #202020;
+        color: wheat;
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+    /* Form styling for the section area */
+
+    .k-body{
+
+        width: 30%;
+        height: 70%;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        top: 20px;
+        left: 160px; 
+    }
+
+    .align{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .list{
+        width: 120%;
+        margin-bottom: 10px;
+        border: none;
+        margin-left: 4.5%;
+        padding: 9.6px;
+        padding-right: 14.63px;
+        background-color: beige;
+    }
+
+
+}
+
+
+
