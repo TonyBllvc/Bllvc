@@ -20,21 +20,33 @@ function addTo(){
     var first = document.getElementById("main_one");
     var second = document.getElementById("main_two");
     var third = document.getElementById("main_three");
-    if(!first.value){
-        first.value = one;
-        document.getElementById("main").value = "";
-    }else if(first.value && (!second.value)){
-        second.value = one;
-        document.getElementById("main").value = "";
-    }else if(first.value && second.value && (!third.value)){
-        third.value = one;
-        document.getElementById("main").value = "";   
-    }
-
-    // console.log(4);
-
-    // if(one = first){
+    // if(!first.value){
+    //     first.value = one;
+    //     document.getElementById("main").value = "";
+    // }else if(first.value && (!second.value)){
+    //     second.value = one;
+    //     document.getElementById("main").value = "";
+    // }else if(first.value && second.value && (!third.value)){
+    //     third.value = one;
+    //     document.getElementById("main").value = "";   
     // }
+    var arr=[first.value, second.value, third.value];
+    console.log(arr[0])
+    switch (arr.length>=3) {
+        case !arr[0]:
+            first.value = one;
+            document.getElementById("main").value = "";
+          break;
+        case !arr[1]:
+            second.value = one;
+            document.getElementById("main").value = "";
+          break;
+        case !arr[2]:
+            third.value = one;
+            document.getElementById("main").value = "";   
+          break;
+        
+      }
 }
 
 // function addTo(){
