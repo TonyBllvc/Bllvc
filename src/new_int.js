@@ -8,7 +8,7 @@ function sum(){
     // document.getElementById("tap") = document.display.text.value;
     // document.getElementById("tap") = number;
 
-    document.display.text.value =  number;
+    document.display.text.value =  size;
     
     // document.addEventListener()  
 };
@@ -53,9 +53,9 @@ function sm(){
   var second = document.getElementById("main_two");
   var third = document.getElementById("main_three");
 
-  var size = first.value + second.value + third.value;
+  var size = [first.value , second.value , third.value];
   // var size =[ 12, 3, 4, 2, 1];
-  console.log(first.value);
+//   console.log(first.value);
   var small = size[0];
 
   for(i = 1; i <= size.length; i++){
@@ -72,7 +72,7 @@ function lg(){
   var second = document.getElementById("main_two");
   var third = document.getElementById("main_three");
 
-  var size = first.value + second.value + third.value;
+  var size = [first.value + second.value + third.value];
   // var size =[ 12, 3, 4, 2, 1];
 
   var large = size[0];
@@ -80,7 +80,9 @@ function lg(){
   for(i = 0; i <= size.length; i++){
       if(size[i] > large){
           large = size[i];
-      }
+      } else{
+        small = small;
+    }
   }
 
   document.display.text.value = large;
@@ -91,12 +93,12 @@ function rg(){
     var second = document.getElementById("main_two");
     var third = document.getElementById("main_three");
 
-    var size = first.value + second.value + third.value;
+    var size = [first.value + second.value + third.value];
     // var size =[ 12, 3, 4, 2, 1];
 
     var small = size[0];
 
-    for(i = 1; i <= size.length; i++){
+    for(i = 0; i <= size.length; i++){
         if(size[i] < small){
             small = size[i];
         } else{
