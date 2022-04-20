@@ -55,7 +55,7 @@ function sm(){
 
   var size = first.value + second.value + third.value;
   // var size =[ 12, 3, 4, 2, 1];
-
+  console.log(first.value);
   var small = size[0];
 
   for(i = 1; i <= size.length; i++){
