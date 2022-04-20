@@ -72,7 +72,7 @@ function lg(){
   var second = document.getElementById("main_two");
   var third = document.getElementById("main_three");
 
-  var size = [first.value + second.value + third.value];
+  var size = [first.value, second.value, third.value];
   // var size =[ 12, 3, 4, 2, 1];
 
   var large = size[0];
@@ -81,7 +81,7 @@ function lg(){
       if(size[i] > large){
           large = size[i];
       } else{
-        small = small;
+        large = large;
     }
   }
 
@@ -93,7 +93,7 @@ function rg(){
     var second = document.getElementById("main_two");
     var third = document.getElementById("main_three");
 
-    var size = [first.value + second.value + third.value];
+    var size = [first.value, second.value, third.value];
     // var size =[ 12, 3, 4, 2, 1];
 
     var small = size[0];
